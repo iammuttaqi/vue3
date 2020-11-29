@@ -1,4 +1,5 @@
-// vue.config.js
 module.exports = {
-	publicPath: ‘/vue3/’
+	publicPath: process.env.NODE_ENV === 'production'
+	? '/vue3/'
+	: '/'
 }
